@@ -1,0 +1,222 @@
+/* ######################### RESETS/GENERALS ######################## */
+
+@font-face {
+    font-family: "karla";
+    src: url(./../font/Karla-VariableFont_wght.ttf);
+}
+
+*
+{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+a
+{
+    text-decoration: none;
+    color: inherit;
+}
+
+img
+{
+    display: block;
+    width: 100%;
+    height:  100%;
+}
+
+body
+{
+    font-family: "karla";
+}
+
+:root
+{
+    --headline-font-size: 1.5rem;
+    --headline-font-weight: 700px;
+    --nav-font-size: 0.75rem;
+    --nav-color: #323A45;
+    --accent-color: #848484;
+    --sub-headline-font-size: 1rem;
+    --sub-headline-font-weight: 400px;
+    --sub-headline-color: black;
+    --price-font-size: 1rem;
+    --price-font-weight: 25rem;
+    --text-font-size: 1rem;
+    --text-font-weight: 1rem;
+    --footer-headline-font-weight: 700px;
+    --footer-headline-color: black;
+    --footer-text-font-size: 0.75rem;
+    --footer-text-color: #323A45;
+}
+
+.nav_wrapper
+{
+    color: var(--nav-color);
+    text-transform: uppercase;
+}
+
+.nav_wrapper > a
+{
+    font-size: var(--nav-font-size);
+}
+
+.logo
+{
+    font-size: var(--headline-font-size);
+}
+
+h1, h2
+{
+    font-weight: var(--headline-font-weight);
+}
+
+h2, .shop_text, .price_text
+{
+    font-size: var(--text-font-size);
+}
+
+h2, .price_text
+{
+    font-weight: var(--sub-headline-font-weight);
+    color: black;
+}
+
+p
+{
+    color: var(--accent-color);
+}
+
+/* ######################### HEADER SECTION ######################## */
+
+.nav_wrapper
+{
+    padding-inline: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav_wrapper h1, .nav_link 
+{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.nav_wrapper > div > a
+{
+    align-self: center;
+}
+
+.nav_wrapper div
+{
+    display: flex;
+    gap: 58px;
+}
+
+/* ######################### MAIN SECTION ######################## */
+
+.main_wrapper
+{
+    display: grid;
+    row-gap: 128px;
+}
+
+.gallery_wrapper
+{
+    margin-inline: auto;
+    padding-inline: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 1fr);
+    column-gap: 24px;
+    row-gap: 108px;
+    /* justify-content: center; */
+    /* grid-template-columns: repeat(auto-fill, minmax(1360px, 300px)); */
+}
+
+.item_wrapper > div
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+}
+
+.first_item
+{
+    grid-column: 1 / 4;
+    margin-bottom: 24px;
+}
+
+.item_wrapper > a > img
+{
+    transition: 250ms ease-in-out;
+}
+
+.item_wrapper > a > img:hover
+{
+    filter: opacity(0.6);
+}
+
+/* ######################### FOOTER SECTION ######################## */
+
+.footer_wrapper
+{
+    margin-inline: auto;
+    padding-inline: 40px;
+}
+
+.footer_grid
+{
+    margin-top: 64px;
+    padding: 64px 0 48px 0;
+    display: grid;
+    grid-template-columns: 2.2fr 1fr 1fr 2fr;
+    column-gap: 40px;
+}
+
+.footer_grid div h2 
+{
+    font-weight: bolder;
+    margin-bottom: 40px;
+    font-size: 0.75rem;
+}
+
+.footer_grid div p, a
+{
+    font-size: var(--footer-text-font-size);
+    color: black;
+}
+
+.footer_grid div:nth-of-type(4)
+{
+    display: block;
+    width: 200px;
+    margin-left: auto;
+
+}
+
+.subscribtion_quote
+{
+    font-style: italic;
+}
+
+.contact_link, .copyright_text
+{
+    font-size: 0.75rem;
+    font-weight: 100;
+    color: var(--footer-text-color);
+}
+
+.contact_link_wrapper > a 
+{
+    display: block;
+}
+
+span
+{
+    font-weight: bold;
+}
+
+.copyright_text
+{
+    margin-bottom: 8px;
+}
